@@ -12,7 +12,15 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={ HomeScreen } />
+        <Stack.Screen
+          name="Home"
+          component={ HomeScreen }
+          options={
+            {
+              headerTitle: "Leandro Faria",
+            }
+          }
+        />
         <Stack.Screen name="Season" component={ SeasonScreen } />
       </Stack.Navigator>
     </NavigationContainer>
