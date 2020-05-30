@@ -1,13 +1,12 @@
-import React from 'react';
+import { Platform } from 'react-native';
 
-import { View, Image } from 'react-native';
+import HeaderAndroid from './Android';
+import HeaderIOS from '/iOS';
 
-const Header = () => { 
-    return (
-        <View>
-            <Image source={ } />
-        </View>
-    );
-};
+const Header = Platform.select({
+    ios: () => HeaderIOS,
+    android: () => HeaderAndroid,
+    default: () => HeaderAndroid,
+});
 
 export default Header;
