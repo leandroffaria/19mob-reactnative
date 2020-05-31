@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, wait } from '@testing-library/react-native';
+import { render } from '@testing-library/react-native';
 
 import HeaderAndroid from '../index';
 import Logo from '../../../../assets/mercado-livre.png';
