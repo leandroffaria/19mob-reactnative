@@ -4,20 +4,21 @@ import { Button, Text, StyleSheet } from 'react-native';
 
 const style = StyleSheet.create({
     button: {
-        marginBottom: 10
+        marginBottom: 10,
+        backgroundColor: '#3483fa'
     }
 });
 
-const Seasons = ({ handlerSeason, years }) => {
-    return years
+const Seasons = ({ handlerSeason, data }) => {
+    return data
         .map(({ season: year }) => (
             <Button 
+                testID={ `year-${year}` }
                 key={ `year-${year}` }
                 style={ style.button }
                 onPress={ () => handlerSeason('Season', { year })}
-            >
-                <Text>{ year }</Text>
-            </Button>
+                title={ year }
+            />
         ));
 }
 

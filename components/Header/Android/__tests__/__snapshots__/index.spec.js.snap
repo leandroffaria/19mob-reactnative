@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header -> Android should be render snapshot 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+    testID="container"
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../assets/mercado-livre.png",
+        }
+      }
+      style={
+        Object {
+          "height": 33,
+          "width": 130,
+        }
+      }
+      testID="image"
+    />
+  </View>
+</View>
+`;

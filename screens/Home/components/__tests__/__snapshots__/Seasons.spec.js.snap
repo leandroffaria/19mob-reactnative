@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home -> components -> Seasons should be render snapshot 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Button
+    style={
+      Object {
+        "backgroundColor": "#3483fa",
+        "marginBottom": 10,
+      }
+    }
+    testID="year-2020"
+    title={2020}
+  />
+  <Button
+    style={
+      Object {
+        "backgroundColor": "#3483fa",
+        "marginBottom": 10,
+      }
+    }
+    testID="year-2019"
+    title={2019}
+  />
+  <Button
+    style={
+      Object {
+        "backgroundColor": "#3483fa",
+        "marginBottom": 10,
+      }
+    }
+    testID="year-2018"
+    title={2018}
+  />
+</View>
+`;
