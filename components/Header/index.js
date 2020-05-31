@@ -1,12 +1,15 @@
+import React from 'react';
 import { Platform } from 'react-native';
 
+import Logo from '../../assets/mercado-livre.png';
+
 import HeaderAndroid from './Android';
-import HeaderIOS from '/iOS';
+import HeaderIOS from './iOS';
 
 const Header = Platform.select({
-    ios: () => HeaderIOS,
-    android: () => HeaderAndroid,
-    default: () => HeaderAndroid,
+    ios: () => <HeaderIOS logo={ Logo } />,
+    android: () => <HeaderAndroid logo={ Logo } />,
+    default: () => <HeaderAndroid logo={ Logo } />,
 });
 
 export default Header;

@@ -4,10 +4,12 @@ const Style = StyleSheet.create({
     header: {
         flex: 1,
         display: 'flex',
-        backgroundColor: 'pink'
+        justifyContent: 'center',
+        alignItems: 'center', 
     },
     image: {
-        height: 40,
+        height: 33,
+        width: 130
     }
 });
 

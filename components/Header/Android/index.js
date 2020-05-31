@@ -1,15 +1,18 @@
 import React from 'react';
-
-import Logo from '../../assets/mercado-livre.png';
-
 import { View, Image } from 'react-native';
-  
+
 import Style from '../style';
 
-const Header = () => { 
+const Header = ({ logo }) => { 
     return (
-        <View style={ { ...Style.header, backgroundColor: '#93bb3a' } }>
-            <Image style={ Style.image } source={ Logo } />
+        <View 
+            testID="container" // usado para buscar o elemento para realizar os testes unitários
+            style={ Style.header }
+        >
+            <Image 
+                testID="image" // usado para buscar o elemento para realizar os testes unitários
+                style={ Style.image } source={ logo }
+            />
         </View>
     );
 };

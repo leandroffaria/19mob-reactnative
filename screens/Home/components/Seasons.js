@@ -1,8 +1,6 @@
 import React from 'react';
 
-import { StyleSheet } from 'react-native';
-
-import { Button, Text } from 'native-base';
+import { Button, Text, StyleSheet } from 'react-native';
 
 const style = StyleSheet.create({
     button: {
@@ -10,12 +8,11 @@ const style = StyleSheet.create({
     }
 });
 
-const years = ['2020','2019', '2018', '2017'];
-
-const Seasons = ({ handlerSeason }) => {
+const Seasons = ({ handlerSeason, years }) => {
     return years
-        .map(year => (
+        .map(({ season: year }) => (
             <Button 
+                key={ `year-${year}` }
                 style={ style.button }
                 onPress={ () => handlerSeason('Season', { year })}
             >
