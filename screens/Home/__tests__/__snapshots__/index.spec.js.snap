@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home -> Screen should be call seasons 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  Seasons
+</View>
+`;
+
+exports[`Home -> Screen should be render snapshot with loading 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="#3483fa"
+    hidesWhenStopped={true}
+    size="large"
+  />
+  Seasons
+</View>
+`;
